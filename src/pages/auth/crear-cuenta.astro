@@ -1,0 +1,18 @@
+---
+import AuthLayout from "../../layouts/AuthLayout.astro";
+import SignupForm from "../../components/SignupForm.jsx";
+---
+<AuthLayout title="Crear cuenta · Stoqly" showTopRightButton={true}>
+  <div class="flex justify-center">
+    <div class="w-full flex justify-center">
+      <div class="w-full max-w-2xl">
+        <div class="flex justify-center">
+          <!-- Card centrado -->
+          <div class="mt-8">
+            <SignupForm client:load />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</AuthLayout>
