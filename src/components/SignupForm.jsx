@@ -29,13 +29,16 @@ export default function SignupForm() {
   async function onSubmit(e) {
     e.preventDefault();
     if (!canSubmit) return;
-
+  
     try {
       setSubmitting(true);
-      
-      alert("¡Cuenta creada!");
+      // Aquí podrías hacer tu fetch real si tuvieras backend.
+      await new Promise((res) => setTimeout(res, 1000)); // Simula delay
+  
+      // ✅ Redirige al dashboard
+      window.location.href = "/app";
     } catch (err) {
-      alert(err.message || "No se pudo registrar.");
+      alert("Error al registrar");
     } finally {
       setSubmitting(false);
     }

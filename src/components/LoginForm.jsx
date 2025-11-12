@@ -9,23 +9,20 @@ export default function LoginForm() {
   async function onSubmit(e) {
     e.preventDefault();
     if (!canSubmit) return;
-
+  
     try {
       setSubmitting(true);
-      // 👉 Conecta aquí tu endpoint (email o credencial corporativa)
-      // const res = await fetch("/api/auth/start", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify({ identifier }),
-      // });
-      // if (!res.ok) throw new Error("No se pudo iniciar sesión");
-      alert("Continuar (mock): aquí va tu flujo de login / MFA / magic link.");
+      await new Promise((res) => setTimeout(res, 1000)); // simula carga
+  
+      // ✅ Redirige al dashboard
+      window.location.href = "/app";
     } catch (err) {
-      alert(err.message || "Error al iniciar sesión.");
+      alert("Error al iniciar sesión");
     } finally {
       setSubmitting(false);
     }
   }
+  
 
   return (
     <form

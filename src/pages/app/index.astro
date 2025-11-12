@@ -1,0 +1,35 @@
+---
+import DashboardLayout from "../../components/dashboard/DashboardLayout.jsx";
+import StatCard from "../../components/dashboard/StatCard.jsx";
+import BarCard from "../../components/dashboard/BarCard.jsx";
+import LineCard from "../../components/dashboard/LineCard.jsx";
+import { PackageSearch, DollarSign, AlertCircle } from "lucide-react";
+import "src/styles/global.css";
+---
+<DashboardLayout>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <!-- Cards métricas -->
+    <StatCard icon={PackageSearch} title="Stock" value="203,618" badge="+ 27.12%" />
+    <div class="bg-white rounded-xl border p-4">
+      <div class="text-sm text-amber-700 font-semibold">Bajo Stock de Artículo TF-12.9</div>
+      <p class="text-sm text-slate-600 mt-1">Notifica al proveedor y restablece el stock antes de que quede por debajo del mínimo.</p>
+      <a href="#" class="inline-block mt-3 text-sm font-semibold text-amber-700 underline">Ir al Producto</a>
+    </div>
+    <StatCard icon={DollarSign} title="Valor del Inventario" value="$12,326,067" badge="+ 2.56" />
+  </div>
+
+  <div class="mt-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <div class="lg:col-span-2"><BarCard /></div>
+    <div class="bg-white rounded-xl border p-4 flex flex-col gap-3">
+      <button class="rounded-lg h-11 bg-slate-800 text-white font-semibold hover:bg-slate-900">
+        + Agregar Artículo
+      </button>
+      <button class="rounded-lg h-11 border hover:bg-slate-50">⬇️ Descargar CSV</button>
+      <button class="rounded-lg h-11 border hover:bg-slate-50">⬇️ Descargar XLSX</button>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <LineCard />
+  </div>
+</DashboardLayout>
