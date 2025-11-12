@@ -1,16 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from "../components/Button.jsx";
+import AuthLayout from "/Users/yamilbojorges/Documents/Stoqly/src/pages/auth/crear-cuenta.astro"
+import { redirect } from "astro:middleware";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+export async function get() {
+  return redirect("/auth/crear-cuenta");
+}
 ---
 
-<Layout>
-	
-	<div class="mt-4">
-    <Button client:load onClick={() => alert("¡Funciona React dentro de Astro!")}>
-      Presióname
-    </Button>
-  </div>
-</Layout>
+<AuthLayout>
+
+</AuthLayout>

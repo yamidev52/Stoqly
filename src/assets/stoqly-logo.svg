@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="256" viewBox="0 0 640 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stoqly logo">
+  <title>Stoqly Logo</title>
+  <defs>
+    <style>
+      .primary { fill: #007BFF; }
+      .stroke { stroke: #007BFF; stroke-width: 14; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .word { fill: #2C3E50; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; font-weight: 600; font-size: 88px; letter-spacing: 0.5px; }
+    </style>
+  </defs>
+  <!-- Icon -->
+  <g transform="translate(0,0)">
+    <rect x="12" y="12" width="232" height="232" rx="36" ry="36" class="stroke"/>
+    <path d="M86 94 L128 70 L170 94 L128 118 Z" class="stroke"/>
+    <path d="M86 110 L128 134 L170 110" class="stroke"/>
+    <path d="M104 164 L124 184 L160 148" class="stroke"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="276" y="165" class="word">Stoqly</text>
+</svg>
