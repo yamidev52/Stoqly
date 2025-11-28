@@ -4,9 +4,9 @@ import { useState } from "react";
 export default function Sidebar() {
   const [openMov, setOpenMov] = useState(true);
 
-  const Item = ({ icon: Icon, label, active }) => (
+  const Item = ({ icon: Icon, label,href = "#", active }) => (
     <a
-      href="#"
+      href={href}
       className={`flex items-center gap-3 px-3 py-2 rounded-md text-sm hover:bg-slate-100 ${active ? "bg-slate-100 font-semibold" : "text-slate-700"}`}
     >
       <Icon size={18} />
@@ -18,9 +18,8 @@ export default function Sidebar() {
     <aside className="hidden md:flex w-64 shrink-0 border-r bg-white">
       <div className="p-4 w-full flex flex-col">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3 mb-6">
-          <img src="/stoqly.svg" className="h-8 w-8" alt="Stoqly" />
-          <span className="text-2xl font-bold tracking-tight text-slate-800">Stoqly</span>
+        <a href="/" className="flex items-center gp-3 mb-6">
+          <img src="src/assets/Stoqly.png" className="h-25 w-25" alt="Stoqly" />
         </a>
 
         {/* Grupo Movimientos */}
@@ -35,7 +34,7 @@ export default function Sidebar() {
         </button>
         {openMov && (
           <div className="space-y-2 pl-2 mt-2">
-            <Item icon={FileText} label="Crear Artículo" />
+            <Item icon={FileText} label="Crear Artículo" href="/articles" />
             <Item icon={FileText} label="Editar Artículo" />
           </div>
         )}
