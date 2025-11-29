@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DashboardLayout from "../layouts/DashboardLayout.astro";
+import ArticlesDashboard from "../components/articles/ArticlesDasboard.jsx";
+---
+
+<BaseLayout title="Gestión de artículos">
+  <DashboardLayout>
+    <ArticlesDashboard client:load />
+  </DashboardLayout>
+</BaseLayout>

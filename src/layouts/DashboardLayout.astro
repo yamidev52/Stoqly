@@ -1,0 +1,15 @@
+---
+import Sidebar from "../components/dashboard/Sidebar.jsx";
+import Topbar from "../components/dashboard/Topbar.jsx";
+---
+
+<div class="min-h-screen bg-slate-50 flex">
+  <Sidebar client:load />
+
+  <div class="flex-1 min-w-0">
+    <Topbar client:load />
+    <main class="px-4 md:px-6 lg:px-8 py-6">
+      <slot />
+    </main>
+  </div>
+</div>
