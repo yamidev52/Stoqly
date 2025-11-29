@@ -1,47 +1,21 @@
-# Astro Starter Kit: Basics
+# MAESTRA LEA ESTO ANTES DE CALIFICAR 👇🏻
 
-```sh
-npm create astro@latest -- --template basics
-```
+##### La tarea que estaba asignada ya no me dejo subir los archivos del Word y de la presentacion nuevos
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+##### Es por eso que se los voy a subir aqui (YAMIL)
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+Nombre del Archivo de la Presentación: **Stoqly Presentacion.pdf**
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+> Aqui esta la Presentacion que expusimos el Jueves
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+Aqui le adjunto el LINK de mi Drive con mis trabajos del curso 👇🏻
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+[Drive Yamil](https://drive.google.com/drive/folders/1A7T_Isb3RJFjXdYLaErGqTc2Goz3yLQ8?usp=drive_link)
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 # Stoqly
+
